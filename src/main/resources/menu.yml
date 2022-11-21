@@ -1,0 +1,196 @@
+#
+#
+# Lưu ý: Các cài đặt dưới đây ảnh hưởng với giao diện nạp thẻ = khung chat và giao diện nạp thẻ = menu
+#
+#
+#
+#Menu chọn loại thẻ, lưu ý không đổi các key về loại thẻ như Viettel, Vinaphone,...
+loaithe:
+  Name: 'Chọn loại thẻ'
+  Size: 45
+  Inv:
+    Viettel:
+      Slot: 10
+      Type: BOOK
+      Name: '&bViettel'
+      Lore:
+        - '&aĐang hoạt động'
+        - ''
+        - '&9Nhấn vào đây để chọn loại thẻ này'
+    Vinaphone:
+      Slot: 12
+      Type: BOOK
+      Name: '&bVinaphone'
+      Lore:
+        - '&aĐang hoạt động'
+        - ''
+        - '&9Nhấn vào đây để chọn loại thẻ này'
+    Vietnamobile:
+      Slot: 14
+      Type: BOOK
+      Name: '&bVietnamobile'
+      Lore:
+        - '&aĐang hoạt động'
+        - ''
+        - '&9Nhấn vào đây để chọn loại thẻ này'
+    Mobifone:
+      Slot: 16
+      Type: BOOK
+      Name: '&bMobifone'
+      Lore:
+        - '&aĐang hoạt động'
+        - ''
+        - '&9Nhấn vào đây để chọn loại thẻ này'
+    Gate:
+      Slot: 28
+      Type: BOOK
+      Name: '&bGate'
+      Lore:
+        - '&aĐang hoạt động'
+        - ''
+        - '&9Nhấn vào đây để chọn loại thẻ này'
+    Garena:
+      Slot: 30
+      Type: BOOK
+      Name: '&bGarena'
+      Lore:
+        - '&aĐang hoạt động'
+        - ''
+        - '&9Nhấn vào đây để chọn loại thẻ này'
+    Vcoin:
+      Slot: 32
+      Type: BOOK
+      Name: '&bVcoin'
+      Lore:
+        - '&aĐang hoạt động'
+        - ''
+        - '&9Nhấn vào đây để chọn loại thẻ này'
+    Zing:
+      Slot: 34
+      Type: BOOK
+      Name: '&bZing'
+      Lore:
+        - '&aĐang hoạt động'
+        - ''
+        - '&9Nhấn vào đây để chọn loại thẻ này'
+
+#Menu chọn mệnh giá thẻ, lưu ý không đổi các key về giá trị thẻ như 10000, 20000,...
+menhgia:
+  Name: 'chọn mệnh giá thẻ'
+  Size: 9
+  Inv:
+    10000:
+      Slot: 0
+      Type: BOOK
+      Name: '&b10,000'
+      Lore:
+        - '&9Nhấn vào đây để chọn mệnh giá này'
+    20000:
+      Slot: 1
+      Type: BOOK
+      Name: '&b20,000'
+      Lore:
+        - '&9Nhấn vào đây để chọn mệnh giá này'
+    30000:
+      Slot: 2
+      Type: BOOK
+      Name: '&b30,000'
+      Lore:
+        - '&9Nhấn vào đây để chọn mệnh giá này'
+    50000:
+      Slot: 3
+      Type: BOOK
+      Name: '&b50,000'
+      Lore:
+        - '&9Nhấn vào đây để chọn mệnh giá này'
+    100000:
+      Slot: 4
+      Type: BOOK
+      Name: '&b100,000'
+      Lore:
+        - '&9Nhấn vào đây để chọn mệnh giá này'
+    200000:
+      Slot: 5
+      Type: BOOK
+      Name: '&b200,000'
+      Lore:
+        - '&9Nhấn vào đây để chọn mệnh giá này'
+    300000:
+      Slot: 6
+      Type: BOOK
+      Name: '&b300,000'
+      Lore:
+        - '&9Nhấn vào đây để chọn mệnh giá này'
+    500000:
+      Slot: 7
+      Type: BOOK
+      Name: '&b500,000'
+      Lore:
+        - '&9Nhấn vào đây để chọn mệnh giá này'
+    1000000:
+      Slot: 8
+      Type: BOOK
+      Name: '&b1,000,000'
+      Lore:
+        - '&9Nhấn vào đây để chọn mệnh giá này'
+
+#Menu nhập seri và mã pin dựa trên menu Anvil
+seri_pin:
+  Inv:
+    Seri:
+      Type: DIAMOND
+      Name: '&aNhập seri tại đây'
+    Pin:
+      Type: DIAMOND
+      Model: 1 #sử dụng từ 1.14 trở đi
+      Data: 1 #sử dụng độ bền của vật phẩm, chỉ áp dụng cho các vật phẩm có độ bền
+      Name: '&aNhập mã thẻ tại đây'
+
+
+#Menu mặc định hiển thị TOP nạp thẻ tổng, lưu ý không đổi các key về top như Top1, Top2, Top3...
+#Để custom menu TOP cao cấp hơn, hãy sử dụng các plugin hỗ trợ tạo menu như BetterGUI, DeluxeMenus, ChestCommands,...
+# và sử dụng placeholder có sẵn trong plugin này (chi tiết trong file placeholder.txt)
+top:
+  Name: 'Top nạp thẻ'
+  Size: 27
+  Inv:
+    Top1:
+      Slot: 4
+      Type: EMERALD_BLOCK
+      Name: '&a&l#{0}&f&l &b&l{1} &7&l- &6&l{2}₫' #{0} là tên người chơi ở Top #, {1} là số tiền đã nạp
+    Top2:
+      Slot: 12
+      Type: DIAMOND_BLOCK
+      Name: '&a&l#{0}&f&l &b&l{1} &7&l- &6&l{2}₫'
+    Top3:
+      Slot: 14
+      Type: DIAMOND_BLOCK
+      Name: '&a&l#{0}&f&l &b&l{1} &7&l- &6&l{2}₫'
+    Top4:
+      Slot: 19
+      Type: GOLD_BLOCK
+      Name: '&a&l#{0}&f&l &b&l{1} &7&l- &6&l{2}₫'
+    Top5:
+      Slot: 20
+      Type: GOLD_BLOCK
+      Name: '&a&l#{0}&f&l &b&l{1} &7&l- &6&l{2}₫'
+    Top6:
+      Slot: 21
+      Type: GOLD_BLOCK
+      Name: '&a&l#{0}&f&l &b&l{1} &7&l- &6&l{2}₫'
+    Top7:
+      Slot: 22
+      Type: GOLD_BLOCK
+      Name: '&a&l#{0}&f&l &b&l{1} &7&l- &6&l{2}₫'
+    Top8:
+      Slot: 23
+      Type: GOLD_BLOCK
+      Name: '&a&l#{0}&f&l &b&l{1} &7&l- &6&l{2}₫'
+    Top9:
+      Slot: 24
+      Type: GOLD_BLOCK
+      Name: '&a&l#{0}&f&l &b&l{1} &7&l- &6&l{2}₫'
+    Top10:
+      Slot: 25
+      Type: GOLD_BLOCK
+      Name: '&a&l#{0}&f&l &b&l{1} &7&l- &6&l{2}₫'

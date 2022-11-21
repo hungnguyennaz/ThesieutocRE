@@ -1,0 +1,39 @@
+#tính năng tặng quà cho người theo các các mốc nạp
+
+
+# Ví dụ: người chơi nạp một thẻ 20k, người chơi sẽ nhận được quà từ 2 mốc 10000 và 20000,
+#  sau đó nạp thêm 30k nữa, người chơi sẽ nhận được quà từ mốc 50000
+#
+#Lưu ý:
+#- Nếu người chơi đã nạp vượt qua số tiền mốc đó trước khi nó được tạo ra thì sẽ không được quà.
+#- Dữ liệu được nhập từ log_success.txt hoặc MySQL, cho nên vui lòng không xoá log.
+#- Bạn có thể đặt mốc thưởng tuỳ thích, ví dụ 35000 hoặc 199000 đều được
+#
+
+#tắt theo mặc định
+enable: false
+
+#thực hiện các lệnh khi nạp thành công các thẻ có mệnh giá tương đương
+#
+#     để trống sẽ thực thi lệnh bằng người chơi với các quyền có sẵn
+#     [op] sẽ thực thi lệnh bằng người chơi nhưng có OP
+#     [console] sẽ thực thi lệnh bằng console (server)
+command:
+  10000:
+    - 'console:broadcast {player} đạt mốc nạp 10k!'
+  20000:
+    - 'console:broadcast {player} đạt mốc nạp 20k!'
+  30000:
+    - 'console:broadcast {player} đạt mốc nạp 30k!'
+  50000:
+    - 'console:broadcast {player} đạt mốc nạp 50k!'
+  100000:
+    - 'console:broadcast {player} đạt mốc nạp 100k!'
+  200000:
+    - 'console:broadcast {player} đạt mốc nạp 200k!'
+  300000:
+    - 'console:broadcast {player} đạt mốc nạp 300k!'
+  500000:
+    - 'console:broadcast {player} đạt mốc nạp 500k!'
+  1000000:
+    - 'console:broadcast {player} đạt mốc nạp 1tr!'

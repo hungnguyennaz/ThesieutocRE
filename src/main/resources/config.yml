@@ -1,0 +1,79 @@
+#Nhập API để sử dụng plugin
+TheSieuToc-API:
+  key: ''
+  secret: ''
+
+
+#Tắt theo mặc định
+#Nếu không sử dụng MySQL thì dữ liệu sẽ được lưu trên file, cẩn thận khi chuyển đổi vì dữ liệu có sẵn từ trước sẽ không di chuyển theo
+#Lưu ý MySQL chỉ hoạt động sau khi plugin được khởi động, không áp dụng cho lệnh /tst reload
+mysql:
+  enable: false
+  host: localhost
+  port: 3306
+  user: root
+  password: root
+  database: napthe
+
+
+#sử dụng menu nạp thẻ
+menu: true
+
+
+#Chấp nhận nạp các loại thẻ được liệt kê bên dưới, không muốn member nạp thẻ nào thì xóa cái đó đi
+card:
+  enable:
+    - Viettel
+    - Vinaphone
+    - Vietnamobile
+    - Mobifone
+    - Gate
+    - Garena
+    - Vcoin
+    - Zing
+
+
+  #thực hiện các lệnh khi nạp thành công các thẻ có mệnh giá tương đương
+  #
+  #     để trống sẽ thực thi lệnh bằng người chơi với các quyền có sẵn
+  #     [op] sẽ thực thi lệnh bằng người chơi nhưng có OP
+  #     [console] sẽ thực thi lệnh bằng console (server)
+  command:
+    10000:
+      - 'console:points give {player} 10'
+      - 'op:broadcast {player} vừa ủng hộ 10k!'
+      - 'me vừa ủng hộ server 10k!'
+    20000:
+      - 'console:points give {player} 20'
+      - 'op:broadcast {player} vừa ủng hộ 20k!'
+      - 'me vừa ủng hộ server 20k!'
+    30000:
+      - 'console:points give {player} 30'
+      - 'op:broadcast {player} vừa ủng hộ 30k!'
+      - 'me vừa ủng hộ server 30k!'
+    50000:
+      - 'console:points give {player} 50'
+      - 'op:broadcast {player} vừa ủng hộ 50k!'
+      - 'me vừa ủng hộ server 50k!'
+    100000:
+      - 'console:points give {player} 100'
+      - 'op:broadcast {player} vừa ủng hộ 100k!'
+      - 'me vừa ủng hộ server 100k!'
+    200000:
+      - 'console:points give {player} 200'
+      - 'op:broadcast {player} vừa ủng hộ 200k!'
+      - 'me vừa ủng hộ server 200k!'
+    300000:
+      - 'console:points give {player} 300'
+      - 'op:broadcast {player} vừa ủng hộ 300k!'
+      - 'me vừa ủng hộ server 300k!'
+    500000:
+      - 'console:points give {player} 500'
+      - 'op:broadcast {player} vừa ủng hộ 500k!'
+      - 'me vừa ủng hộ server 500k!'
+    1000000:
+      - 'console:points give {player} 1000'
+      - 'op:broadcast {player} vừa ủng hộ 1 triệu!'
+      - 'me vừa ủng hộ server 1tr!'
+
+

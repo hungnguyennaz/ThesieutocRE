@@ -1,0 +1,31 @@
+nap_the_dang_xu_ly: '&aThẻ của bạn đang được xử lý, vui lòng chờ trong giây lát...'
+#{0} là mệnh giá thẻ
+nap_the_thanh_cong: '&aNạp thẻ thành công với mệnh giá {0}đ!'
+nap_the_that_bai: '&cNạp thẻ thất bại!'
+nap_the_huy: '&cĐã hủy nạp thẻ!'
+sai_menh_gia: '&aThẻ sai mệnh giá, vui lòng liên hệ Admin!'
+
+chat_chon_loai_the: '&aHãy chọn loại thẻ muốn nạp:'
+chat_chon_menh_gia: '&aHãy chọn mệnh giá muốn nạp:'
+chat_nhap_seri: '&aHãy nhập seri, gõ &chuy&a để hủy nạp thẻ:'
+chat_nhap_pin: '&aHãy nhập mã thẻ, gõ &chuy&a để hủy nạp thẻ:'
+
+#{0} là loại thẻ
+chat_da_chon_loai_the: '&aĐã chọn thẻ {0}!'
+#{0} là mệnh giá thẻ
+chat_da_chon_menh_gia: '&aĐã chọn mệnh giá {0}!'
+
+
+placeholder:
+  # Nếu để là "#,###" thì số tiền sẽ hiển thị là 10,000 20,000... còn nếu để là "#" thì sẽ hiển thị là 10000 20000...
+  value_format: '#,###'
+  #từ placeholder %tst_total%, {0} là số tiền
+  total: '{0}₫'
+  #từ placeholder %tst_player%, {0} là số tiền
+  player: '{0}đ'
+  #từ placeholder %tst_top%, {0} là top, {1} là tên người chơi, {2} là số tiền đã nạp
+  top: '&a&l#{0} &b&l{1} &7&l- &6&l{2}₫'
+  #Nếu như hạng # là trống sẽ xuất dòng này, {0} là stt
+  top_empty: '&a&l#{0} &b&lTrống'
+
+top_empty: '&cKhông có kết quả tìm kiếm!'
